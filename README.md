@@ -8,8 +8,8 @@ The number of times the functions were run is defined by the *RUNS* macro, which
 
 | n | C ave. runtime (s) | x86-64 ave. runtime (s) |  % difference |
 | --- | --- | --- | --- |
-| 2<sup>20</sup> | 0.002107 | 0.002546 | |
-| 2<sup>24</sup> | 0.031055 | 0.037108 | |
+| 2<sup>20</sup> | 0.002107 | 0.002546 | -20.84% |
+| 2<sup>24</sup> | 0.031055 | 0.037108 | -19.49% |
 | 2<sup>28</sup> | | | |
 
 Below is the program output of a sample run, including the correctness check for whether the outputs of the C kernel and the x86-64 kernel are equal. To speed up the execution time of the program, only the first 10 values of each result were compared. However, this may be modified to compare all values by changing the value of *10* in line 68 of *main.c* to *n*.
