@@ -12,6 +12,8 @@ The number of times the functions were run is defined by the *RUNS* macro, which
 | 2<sup>24</sup> | 0.031055 | 0.037108 | -19.49% |
 | 2<sup>28</sup> | 0.496304 | 0.592275 | -19.33% |
 
+The execution time of the x86-64 kernel was consistently slower by 20% compared to the C kernel across all 3 values of *n*. Although it may be expected that the lower-level assembly code would run faster compared to the C code, it is possible that the C compiler optimized the code into machine code that is faster than the assembly code written by me. To achieve the same performance, the assembly code may need to be optimized further.
+
 Below is the program output of a sample run, including the correctness check for whether the outputs of the C kernel and the x86-64 kernel are equal. To speed up the execution time of the program, only the first 10 values of each result were compared. However, this may be modified to compare all values by changing the value of *10* in line 68 of *main.c* to *n*.
 
 ![image](https://github.com/howard-rose/LBYARCH_MP2/assets/25128643/6c5e58dd-6f49-4e3b-9a37-4862f62f8610)
